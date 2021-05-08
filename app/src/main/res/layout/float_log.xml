@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_log"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_log"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/sw_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论监听" />
+
+            <Switch
+                android:id="@+id/sw_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直播监听" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_close" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:padding="5dp"
+                android:text="启动抖音" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:padding="5dp"
+                android:text="关闭抖音" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_new_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:padding="5dp"
+                android:text="一键新机" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:padding="5dp"
+                android:text="刷新ip" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_left"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="设备编码：" />
+
+                <TextView
+                    android:id="@+id/txt_device_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txt_left"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_device_num"
+                    android:paddingBottom="5dp"
+                    android:text="状态：" />
+
+                <TextView
+                    android:id="@+id/txt_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_device_num"
+                    android:layout_toRightOf="@id/txt_left"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_status"
+                    android:paddingBottom="5dp"
+                    android:text="运行次数：" />
+
+                <TextView
+                    android:id="@+id/txt_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_status"
+                    android:layout_toRightOf="@id/txt_left"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/txt_aweme_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_status"
+                    android:layout_toRightOf="@id/txt_count"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_count"
+                    android:paddingBottom="5dp"
+                    android:text="监控对象：" />
+
+                <TextView
+                    android:id="@+id/txt_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_count"
+                    android:layout_toRightOf="@id/txt_left"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/txt_aweme_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_count"
+                    android:layout_toRightOf="@id/txt_target"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_target"
+                    android:paddingBottom="5dp"
+                    android:text="采集数：" />
+
+                <TextView
+                    android:id="@+id/txt_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_target"
+                    android:layout_toRightOf="@id/txt_left"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_sample"
+                    android:paddingBottom="5dp"
+                    android:text="评论上传数：" />
+
+                <TextView
+                    android:id="@+id/txt_comment_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_sample"
+                    android:layout_toRightOf="@id/txt_left"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_comment_upload"
+                    android:paddingBottom="5dp"
+                    android:text="直播上传数：" />
+
+                <TextView
+                    android:id="@+id/txt_live_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_comment_upload"
+                    android:layout_toRightOf="@id/txt_left"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_live_upload"
+                    android:paddingBottom="5dp"
+                    android:text="外网IP：" />
+
+                <TextView
+                    android:id="@+id/txt_device_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_live_upload"
+                    android:layout_toRightOf="@id/txt_left"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/text_device_info"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_device_ip"
+                    android:paddingBottom="5dp"
+                    android:text="设备信息：" />
+
+                <TextView
+                    android:id="@+id/txt_dy_device_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_device_ip"
+                    android:layout_toRightOf="@id/txt_left"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/txt_device_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_device_info"
+                    android:paddingBottom="5dp"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

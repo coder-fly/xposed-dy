@@ -1,0 +1,40 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/spinner_c_0"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_1"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_2"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_3"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_4"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_5"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_6"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_7"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_8"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_9"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_10"
+        android:duration="60"/>
+    <item
+        android:drawable="@drawable/spinner_c_11"
+        android:duration="60"/>
+</animation-list>

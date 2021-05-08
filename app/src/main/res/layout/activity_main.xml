@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/left_label"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="服务器地址：" />
+
+            <EditText
+                android:id="@+id/edit_domain"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/left_label"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_domain"
+                android:gravity="center_vertical"
+                android:text="设备编码：" />
+
+            <EditText
+                android:id="@+id/edit_device"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_domain"
+                android:layout_toRightOf="@id/left_label" />
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_device"
+                android:gravity="center_vertical"
+                android:text="类型编码：" />
+
+            <EditText
+                android:id="@+id/edit_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_device"
+                android:layout_toRightOf="@id/left_label" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_type"
+                android:gravity="center_vertical"
+                android:text="评论前N页" />
+
+            <EditText
+                android:id="@+id/edit_comment_page"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_type"
+                android:layout_toRightOf="@id/left_label" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_comment_page"
+                android:gravity="center_vertical"
+                android:text="达人前N条" />
+
+            <EditText
+                android:id="@+id/edit_video_count"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_comment_page"
+                android:layout_toRightOf="@id/left_label" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_video_count"
+                android:gravity="center_vertical"
+                android:text="采集时间差：s" />
+
+            <EditText
+                android:id="@+id/edit_sample_diff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_video_count"
+                android:layout_toRightOf="@id/left_label" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_sample_diff"
+                android:gravity="center_vertical"
+                android:text="执行间隔：s" />
+
+            <EditText
+                android:id="@+id/edit_interval_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_sample_diff"
+                android:layout_toRightOf="@id/left_label" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_interval_time"
+                android:gravity="center_vertical"
+                android:text="拉取小间隔：ms" />
+
+            <EditText
+                android:id="@+id/edit_aweme_small_interval"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_interval_time"
+                android:layout_toRightOf="@id/left_label" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_aweme_small_interval"
+                android:gravity="center_vertical"
+                android:text="拉取大间隔：ms" />
+
+            <EditText
+                android:id="@+id/edit_aweme_large_interval"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_aweme_small_interval"
+                android:layout_toRightOf="@id/left_label" />
+            
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="采集达人：" />
+
+            <TextView
+                android:id="@+id/tv_sample_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="采集视频：" />
+
+            <TextView
+                android:id="@+id/tv_sample_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
